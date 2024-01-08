@@ -5,152 +5,9 @@
   <title>Películas y Series</title>
   <meta name="generator" content="DirLister v2" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
 <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+BQMBvwAAAD4AAAAAAAAAAAUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwAAAAAAAAAABQMBvwMCAf8FAwG/AAAAAAAAAAADAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8AAAAAAAAAAAAAAD4FAwG/AAAAPgAAAAAAAAAAAAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4FAwG/AAAAPgAAAAAAAAAABQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/AAAAAAAAAAAFAwG/AwIB/wUDAb8AAAAAAAAAAAMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wAAAAAAAAAAAAAAPgUDAb8AAAA+AAAAAAAAAAAAAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgUDAb8AAAA+AAAAAAAAAAAFAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8AAAAAAAAAAAUDAb8DAgH/BQMBvwAAAAAAAAAAAwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AAAAAAAAAAAAAAA+BQMBvwAAAD4AAAAAAAAAAAAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADcAQAAjAEAAN//AAD//wAA//8AANwBAACMAQAA3/8AAP//AAD//wAA3AEAAIwBAADf/wAA//8AAA==" />
-<style>
-* {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	hyphens: auto;
-	margin-top: 0;
-	outline: none !important;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-}
 
-html { background: black; }
-
-header { margin-bottom: 1em; }
-
-body {
-	background-color: rgb(255, 253, 247);
-	box-shadow: 6px 0 4px orange;
-	margin: 0 auto;
-	max-width: 95%;
-	padding: 2em;
-	width: 80%;
-}
-
-@media only screen and (max-width: 1080px) {
-	body {
-		box-shadow: none;
-		font-size-adjust: 80;
-		max-width: 100%;
-		padding: 0.3em;
-		width: 100%;
-	}
-
-	section { padding: 0.1em; }
-
-	ul { margin-left: -3em; }
-}
-
-
-@media print {
-	* { background-color: #fff !important; }
-
-	body {
-		box-shadow: none !important;
-		max-width: 100% !important;
-		padding: 0.3em !important;
-		width: 100% !important;
-	}
-
-	a:after { content: "( " attr(href) " )" !important; }
-
-	section { padding: 0.1em !important; }
-
-	aside { display: none !important; }
-
-	ul { margin-left: -3em !important; }
-}
-
-
-h2 {
-	color: #8B5A00;
-	font: 2.5em Helvetica, Verdana, sans-serif;
-	text-align: center;
-}
-
-aside {
-	display: block;
-	float: right;
-}
-
-aside a, a:visited {
-	color: orangered;
-	font-family: monospace;
-	font-size: 95%;
-	text-decoration: none;
-}
-
-details {
-	margin: 0;
-	padding: 0;
-}
-
-
-summary {
-	box-shadow: 3px 3px 4px silver;
-	color: orange;
-	font: 1.8em Helvetica, Verdana, sans-serif;
-	margin-bottom: 0.2em;
-	padding: 0.1em;
-}
-
-summary2 {
-	box-shadow: 3px 3px 4px silver;
-	color: darkblue;
-	font: 2.5em Helvetica, Verdana, sans-serif;
-	margin-bottom: 0.2em;
-	padding: 0.1em;
-}
-li {
-	padding: 2px;
-	user-select: all;
-}
-
-li > span, summary > span {
-	color: gray;
-	font-family: consolas;
-	font-size: 80%;
-	margin-left: 1em;
-}
-
-ul {
-	font: 0.9em Helvetica, Verdana, sans-serif;
-	list-style-type: none;
-}
-
-li:hover {
-	background: #f6f6f6;
-	box-shadow: 1px 1px 2px silver;
-}
-
-section { padding: 0.6em; }
-
-
-footer {
-	background-color: #800000;
-	bottom: 0;
-	clear: both;
-	color: #ff4;
-	display: inline-block;
-	font-size: 0.7em;
-	left: 0;
-	margin: 0 auto;
-	padding: 3px;
-	position: fixed;
-	text-align: center;
-	width: 99.5%;
-}
-
-
-footer a, footer a:visited {
-	color: #ff4;
-	text-decoration: none;
-}
-</style>
 </head>
 <body>
 <aside>
@@ -194,23 +51,55 @@ footer a, footer a:visited {
 <ul>
 	<a href="https://www.filmaffinity.com/cl/film188896.html" target="_blank">
 		<li> <img src="img/scarface 1983.jpg"/> Scarface (1983)</li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film835426.html" target="_blank">
+		<li> <img src="img/scentwoman 1992.jpg"/>Scent of a Woman (1992)</li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film989180.html" target="_blank">
+		<li><img src="img/carlitosway 1993.jpg"/>Carlitos Way (1993) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film376985.html" target="_blank">
+		<li><img src="img/inthenameofthefather 1993.jpg"/>In The Name Of The Father (1993) </li>
 	</a href="" target="_blank">
-	<li> <img src="img/scentwoman 1992.jpg"/>Scent of a Woman (1992)</li>
-	<li><img src="img/carlitosway 1993.jpg"/>Carlitos Way (1993) </li>
-	<li><img src="img/inthenameofthefather 1993.jpg"/>In The Name Of The Father (1993) </li>
-	<li><img src="img/heat 1995.jpg"/>Heat (1995) </li>
-	<li><img src="img/cityhall 1995.jpg"/>City Hall (1996) </li>
-	<li><img src="img/donnie 1997.jpg"/>Donnie Brasco (1997) </li>
-	<li> <img src="img/abogadodeldiablo 1997.jpg"/>The Devils Advocate (1997)</li>
-	<li><img src="img/anygivensunday 1999.jpg"/>Any Given Sunday (1999) </li>
-	<li> <img src="img/insider 1999.jpg"/>The Insider (1999)</li>
-	<li><img src="img/insomnia 2002.jpg"/>Insomnia (2002) </li>
-	<li> <img src="img/simone 2002.jpg"/>Simone (2002)</li>
-	<li> <img src="img/recruit 2003.jpg"/>The Recruit (2003)</li>
-	<li><img src="img/twoforthemoney 2005.jpg"/>Two For the Money (2005) </li>
-	<li><img src="img/88minutes"/>88 Minutes (2007) </li>
-	<li> <img src="img/righteouskill 2008.jpg"/>Righteous Kill (2008)</li>
-	<li><img src="img/misconduct 2016.jpg"/>Misconduct (2016) </li>
+	<a href="https://www.filmaffinity.com/cl/film267267.html" target="_blank">
+		<li><img src="img/heat 1995.jpg"/>Heat (1995) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film947810.html" target="_blank">
+		<li><img src="img/cityhall 1995.jpg"/>City Hall (1996) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film648751.html" target="_blank">
+		<li><img src="img/donnie 1997.jpg"/>Donnie Brasco (1997) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film691444.html" target="_blank">
+		<li> <img src="img/abogadodeldiablo 1997.jpg"/>The Devils Advocate (1997)</li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film281323.html" target="_blank">
+		<li><img src="img/anygivensunday 1999.jpg"/>Any Given Sunday (1999) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film453336.html" target="_blank">
+		<li> <img src="img/insider 1999.jpg"/>The Insider (1999)</li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film329292.html" target="_blank">
+		<li><img src="img/insomnia 2002.jpg"/>Insomnia (2002) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film677924.html" target="_blank">
+		<li> <img src="img/simone 2002.jpg"/>Simone (2002)</li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film740209.html" target="_blank">
+		<li> <img src="img/recruit 2003.jpg"/>The Recruit (2003)</li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film942035.html" target="_blank">
+		<li><img src="img/twoforthemoney 2005.jpg"/>Two For the Money (2005) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film110808.html" target="_blank">
+		<li><img src="img/88minutes"/>88 Minutes (2007) </li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film484353.html" target="_blank">
+		<li> <img src="img/righteouskill 2008.jpg"/>Righteous Kill (2008)</li>
+	</a>
+	<a href="https://www.filmaffinity.com/cl/film882305.html" target="_blank">
+		<li><img src="img/misconduct 2016.jpg"/>Misconduct (2016) </li>
+	</a>
 </ul>
 </details>
 </section>
@@ -250,7 +139,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>BEN AFFLECK<span>Archivos: 23</span></summary>
+<summary>BEN AFFLECK (Subtituladas)<span>Archivos: 23</span></summary>
 <ul>
 	<li>Armageddon (1998) <img src="img/armageddon 1998.jpg"/></li>
 	<li>School Ties (1992) <img src="img/schoolties 1992.jpg"/></li>
@@ -280,7 +169,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>DWAYNE JOHNSON (La Roca)<span>Archivos: 10</span></summary>
+<summary>DWAYNE JOHNSON (La Roca) - (Subtituladas)<span>Archivos: 10</span></summary>
 <ul>
 	<li>Walking Tall (2004) <img src="img/walkingtall 2004.jpg"/></li>
 	<li>Journey 2 The Mysterious Island (2012) <img src="img/journey2 2012.jpg"/></li>
@@ -297,7 +186,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>JEAN CLAUDE VAN DAMME<span>Archivos: 25</span></summary>
+<summary>JEAN CLAUDE VAN DAMME (Subtituladas)<span>Archivos: 25</span></summary>
 <ul>
 	<li><a href="https://www.filmaffinity.com/cl/film374329.html" target="_blank"><img src="img/noretreatnosurrender 1986.jpg" />No Retreat No Surrender (1986) </a></li>
 	<li>Bloodsport (1988) <img src="img/journeytochina"/></li>
@@ -329,7 +218,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>JHONNY DEPP<span>Archivos: 30</span></summary>
+<summary>JHONNY DEPP (Subtituladas)<span>Archivos: 30</span></summary>
 <ul>
 	<li>Platoon (1986) <img src="img/journeytochina"/></li>
 	<li>Edward Scissorhands (1990) <img src="img/journeytochina"/></li>
@@ -366,7 +255,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>JOHN TRAVOLTA<span>Archivos: 28</span></summary>
+<summary>JOHN TRAVOLTA (Subtituladas)<span>Archivos: 28</span></summary>
 <ul>
 	<li>Saturday Night Fever (1977) <img src="img/journeytochina"/></li>
 	<li>Grease (1978) <img src="img/journeytochina"/></li>
@@ -401,7 +290,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>KEANU REEVES<span>Archivos: 23</span></summary>
+<summary>KEANU REEVES (Subtituladas)<span>Archivos: 23</span></summary>
 <ul>
 	<li>Point Break (1991) <img src="img/journeytochina"/></li>
 	<li>Dracula (1992) <img src="img/journeytochina"/></li>
@@ -431,7 +320,7 @@ footer a, footer a:visited {
 </section> 
 <section>
 <details open="">
-<summary>KEVIN COSTNER<span>Archivos: 24</span></summary>
+<summary>KEVIN COSTNER (Subtituladas)<span>Archivos: 24</span></summary>
 <ul>
 	<li>American Flyers (1985) <img src="img/journeytochina"/></li>
 	<li>Fandango (1985) <img src="img/journeytochina"/></li>
@@ -462,7 +351,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>PATRICK SWAYZE<span>Archivos: 15</span></summary>
+<summary>PATRICK SWAYZE (Subtituladas)<span>Archivos: 15</span></summary>
 <ul>
 	<li>Red Dawn (1984) <img src="img/journeytochina"/></li>
 	<li>Youngblood (1986) <img src="img/journeytochina"/></li>
@@ -484,7 +373,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>RICHARD GERE<span>Archivos: 21</span></summary>
+<summary>RICHARD GERE (Subtituladas)<span>Archivos: 21</span></summary>
 <ul>
 	<li>Breathless (1983) <img src="img/journeytochina"/></li>
 	<li>King David (1985) <img src="img/journeytochina"/></li>
@@ -513,7 +402,7 @@ footer a, footer a:visited {
 
 <section>
 <details open="">
-<summary>RYAN REYNOLDS<span>Archivos: 19</span></summary>
+<summary>RYAN REYNOLDS (Subtituladas)<span>Archivos: 19</span></summary>
 <ul>
 	<li>Foolproof (2003) <img src="img/journeytochina"/></li>
 	<li>Finders Fee (2001) <img src="img/journeytochina"/></li>
@@ -539,7 +428,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>SILVESTER STALLONE<span>Archivos: 27</span></summary>
+<summary>SILVESTER STALLONE (Subtituladas)<span>Archivos: 27</span></summary>
 <ul>
 	<li>Victory (1981) <img src="img/journeytochina"/></li>
 	<li>Nighthawks (1981) <img src="img/journeytochina"/></li>
@@ -573,7 +462,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>STEVEN SEAGAL<span>Archivos: 14</span></summary>
+<summary>STEVEN SEAGAL (Subtituladas)<span>Archivos: 14</span></summary>
 <ul>
 	<li>Above The Law (1988) <img src="img/journeytochina"/></li>
 	<li>Hard To Kill (1990) <img src="img/journeytochina"/></li>
@@ -594,7 +483,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>TOM CRUISE<span>Archivos: 18</span></summary>
+<summary>TOM CRUISE (Subtituladas)<span>Archivos: 18</span></summary>
 <ul>
 	<li>The Outsiders (1983) <img src="img/journeytochina"/></li>
 	<li>Top Gun (1986) <img src="img/journeytochina"/></li>
@@ -620,7 +509,7 @@ footer a, footer a:visited {
 
 <section>
 <details open="">
-<summary>WESLEY SNIPES<span>Archivos: 14</span></summary>
+<summary>WESLEY SNIPES (Subtituladas)<span>Archivos: 14</span></summary>
 <ul>
 	<li>New Jack City (1991) <img src="img/journeytochina"/></li>
 	<li>Passenger 57 (1992) <img src="img/journeytochina"/></li>
@@ -641,7 +530,7 @@ footer a, footer a:visited {
 </section>
 <section>
 <details open="">
-<summary>WILL SMITH<span>Archivos: 21</span></summary>
+<summary>WILL SMITH (Subtituladas)<span>Archivos: 21</span></summary>
 <ul>
 	<li>Dos policias rebeldes (1995)  <img src="img/journeytochina"/></li>
 	<li>Independence Day (1995)  <img src="img/journeytochina"/></li>

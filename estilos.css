@@ -1,0 +1,144 @@
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	hyphens: auto;
+	margin-top: 0;
+	outline: none !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+html { background: black; }
+
+header { margin-bottom: 1em; }
+
+body {
+	background-color: rgb(255, 253, 247);
+	box-shadow: 6px 0 4px orange;
+	margin: 0 auto;
+	max-width: 95%;
+	padding: 2em;
+	width: 80%;
+}
+
+@media only screen and (max-width: 1080px) {
+	body {
+		box-shadow: none;
+		font-size-adjust: 80;
+		max-width: 100%;
+		padding: 0.3em;
+		width: 100%;
+	}
+
+	section { padding: 0.1em; }
+
+	ul { margin-left: -3em; }
+}
+
+
+@media print {
+	* { background-color: #fff !important; }
+
+	body {
+		box-shadow: none !important;
+		max-width: 100% !important;
+		padding: 0.3em !important;
+		width: 100% !important;
+	}
+
+	a:after { content: "( " attr(href) " )" !important; }
+
+	section { padding: 0.1em !important; }
+
+	aside { display: none !important; }
+
+	ul { margin-left: -3em !important; }
+}
+
+
+h2 {
+	color: #8B5A00;
+	font: 2.5em Helvetica, Verdana, sans-serif;
+	text-align: center;
+}
+
+aside {
+	display: block;
+	float: right;
+}
+
+aside a, a:visited {
+	color: orangered;
+	font-family: monospace;
+	font-size: 95%;
+	text-decoration: none;
+}
+
+details {
+	margin: 0;
+	padding: 0;
+}
+
+
+summary {
+	box-shadow: 3px 3px 4px silver;
+	color: orange;
+	font: 1.8em Helvetica, Verdana, sans-serif;
+	margin-bottom: 0.2em;
+	padding: 0.1em;
+}
+
+summary2 {
+	box-shadow: 3px 3px 4px silver;
+	color: darkblue;
+	font: 2.5em Helvetica, Verdana, sans-serif;
+	margin-bottom: 0.2em;
+	padding: 0.1em;
+}
+li {
+	padding: 2px;
+	user-select: all;
+}
+
+li > span, summary > span {
+	color: gray;
+	font-family: consolas;
+	font-size: 80%;
+	margin-left: 1em;
+}
+
+ul {
+	font: 0.9em Helvetica, Verdana, sans-serif;
+	list-style-type: none;
+}
+
+li:hover {
+	background: #f6f6f6;
+	box-shadow: 1px 1px 2px silver;
+}
+
+section { padding: 0.6em; }
+
+
+footer {
+	background-color: #800000;
+	bottom: 0;
+	clear: both;
+	color: #ff4;
+	display: inline-block;
+	font-size: 0.7em;
+	left: 0;
+	margin: 0 auto;
+	padding: 3px;
+	position: fixed;
+	text-align: center;
+	width: 99.5%;
+}
+
+
+footer a, footer a:visited {
+	color: #ff4;
+	text-decoration: none;
+}
